@@ -1,0 +1,33 @@
+---
+name: ROS 2 Vendors Repos Check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.repos'
+      - '**/*.yaml'
+    branches:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  format_and_validity:
+    name: Format and Validity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone project
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: python3 -m pip install vcstool yamllint
+      - name: Validate formatting
+        run: >
+          for file in $(find . -name "*.repos"); do
+            yamllint "$file" \
+            -f github \
+            -d "{extends: default, rules: {document-start: {present: false}, key-ordering: {}}}"
+          done
+      - name: Validate repositories
+        run: |
+          for file in $(find . -name "*.repos"); do
+            vcs validate --input "$file"
+          done
