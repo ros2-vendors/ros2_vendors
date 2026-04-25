@@ -7,7 +7,7 @@
 
 ```bash
 $ mkdir ros2_ws && cd ros2_ws
-$ curl -O https://raw.githubusercontent.com/ros2/ros2/humble/ros2_vendors.repos
+$ curl -O https://raw.githubusercontent.com/ros2/ros2/jazzy/ros2_vendors.repos
 
 $ vcs import src < ros2_vendors.repos
 
