@@ -15,3 +15,7 @@ repositories:
     type: git
     url: https://github.com/ros2-vendors/pybind11_vendor.git
     version: lyrical
+  ros2-vendors/orocos_kdl_vendor:
+    type: git
+    url: https://github.com/ros2-vendors/orocos_kdl_vendor.git
+    version: lyrical
