@@ -35,3 +35,11 @@ repositories:
     type: git
     url: https://github.com/ros2-vendors/yamlcpp_vendor.git
     version: lyrical
+  ros2-vendors/libxml2_vendor:
+    type: git
+    url: https://github.com/ros2-vendors/libxml2_vendor.git
+    version: lyrical
+  ros2-vendors/libxslt_vendor:
+    type: git
+    url: https://github.com/ros2-vendors/libxslt_vendor.git
+    version: lyrical
