@@ -47,3 +47,7 @@ repositories:
     type: git
     url: https://github.com/ros2-vendors/pyyaml_vendor.git
     version: lyrical
+  ros2-vendors/netifaces_vendor:
+    type: git
+    url: https://github.com/ros2-vendors/netifaces_vendor.git
+    version: lyrical
