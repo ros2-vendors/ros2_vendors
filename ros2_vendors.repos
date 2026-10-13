@@ -1,4 +1,8 @@
 repositories:
+  ros2-vendors/asio_vendor:
+    type: git
+    url: https://github.com/ros2-vendors/asio_vendor.git
+    version: lyrical
   ros2-vendors/eigen_vendor:
     type: git
     url: https://github.com/ros2-vendors/eigen_vendor.git
